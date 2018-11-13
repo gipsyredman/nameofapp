@@ -89,6 +89,7 @@ GEM
     nio4r (2.3.1)
     nokogiri (1.8.5-x86-mingw32)
       mini_portile2 (~> 2.3.0)
+    normalize-rails (4.1.1)
     pg (0.21.0-x86-mingw32)
     puma (3.12.0)
     rack (2.0.5)
@@ -172,6 +173,7 @@ DEPENDENCIES
   duktape
   jbuilder (~> 2.5)
   jquery-rails
+  normalize-rails
   pg
   puma (~> 3.11)
   rails (~> 5.2.1)
@@ -186,4 +188,4 @@ RUBY VERSION
    ruby 2.3.3p222
 
 BUNDLED WITH
-   1.15.3
+   1.17.1
