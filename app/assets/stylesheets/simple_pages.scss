@@ -2,6 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+  box-sizing: border-box;
+  padding: 50px 100px 100px 100px;
+}
+
 //Typography
 
 h1, h2 {
@@ -26,25 +31,37 @@ a {
 .navbar {
   padding: 20px;
   z-index: 1;
-}
-
-nav {
-  background-color: white;
   position: fixed;
   top: 0;
   left: 0;
   width: 100% !important;
 }
 
-nav a {
+.navbar a {
   font-family: Verdana, Helvetica, Arial, sans-serif;
   text-decoration: none;
   transition: color 600ms;
   -webkit-transition: color 600ms;
 }
 
-nav>li>a:hover {
+.navbar>li>a:hover {
   color: #36f0f9 !important;
   text-decoration: none;
-  background-color: transparent !important;
+  -webkit-transition: color 600ms;
+}
+
+
+//Carousel
+
+.carousel-item img {
+  display: block;
+  margin: auto;
+  width: auto;
+  height: 225px;
+  max-height: 225px;
+}
+
+i {
+  color: #000;
+  font-size: 40px !important;
 }
