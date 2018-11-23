@@ -5,7 +5,6 @@
     <% @products.each do |product, i| %>
       <li data-target="#carouselExampleIndicators" data-slide-to=#{i) class="#{active if i ==0}"></li>
     <% end %>
-
   </ol>
   <div class="carousel-inner">
     <% @products.each do |product| %>
