@@ -10,18 +10,18 @@ body {
 //Typography
 
 h1, h2 {
-  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-family: Raleway, Verdana, Helvetica, Arial, sans-serif;
   text-align: center;
 }
 
 a {
-  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-family: Raleway, Verdana, Helvetica, Arial, sans-serif;
 }
 
 .footer {
   bottom: 0;
   width: 100%;
-  position: absolute;
+  position: fixed;
   clear: both;
   background-color: #f5f5f5;
 }
@@ -32,23 +32,42 @@ a {
   padding: 20px;
   z-index: 1;
   position: fixed;
+  font-size: 1.25em;
   top: 0;
   left: 0;
   width: 100% !important;
 }
 
-.navbar a {
-  font-family: Verdana, Helvetica, Arial, sans-serif;
+
+nav a {
+  font-family: Raleway, Verdana, Helvetica, Arial, sans-serif;
   text-decoration: none;
   transition: color 600ms;
   -webkit-transition: color 600ms;
 }
 
-.navbar>li>a:hover {
-  color: #36f0f9 !important;
+nav a:hover {
+  color: #36f0f9;
   text-decoration: none;
-  -webkit-transition: color 600ms;
 }
+
+.search-field {
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 40px;
+  font-family: Raleway, Verdana, Helvetica, Arial, sans-serif;
+}
+
+.search-button {
+  padding: 5px;
+  margin-left: 5px;
+  border: 1px solid;
+  text-align: center;
+  font-weight: 200;
+  border-radius: 5px;
+  font-family: Raleway, Verdana, Helvetica, Arial, sans-serif;
+}
+
 
 
 //Carousel

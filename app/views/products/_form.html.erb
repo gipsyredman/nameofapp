@@ -13,31 +13,31 @@
 
   <div class="field">
     <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, class: "form-control", type: "text" %>
   </div>
 
   <div class="field">
     <%= form.label :description %>
-    <%= form.text_area :description %>
+    <%= form.text_area :description, class: "form-control", type: "text" %>
   </div>
 
   <div class="field">
     <%= form.label :image_url %>
-    <%= form.text_field :image_url %>
+    <%= form.text_field :image_url, class: "form-control"  %>
   </div>
 
 
   <div class="field">
     <%= form.label :price %><br>
-    <%= form.text_field :price %>
+    <%= form.text_field :price, class: "form-control", type: "number" %>
   </div>
 
   <div class="field">
     <%= form.label :colour %><br>
-    <%= form.text_field :colour %>
+    <%= form.text_field :colour, class: "form-control", type: "text" %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit 'Submit', class: "btn btn-light form-control" %>
   </div>
 <% end %>
