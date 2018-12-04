@@ -1,1 +1,25 @@
 <h1>Contact QueerBroadsAbroad</h1>
+
+<%= flash[:notice] %>
+
+<%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
+<div class="row">
+  <div class="form-group">
+    <%= form.label :name %>
+    <%= form.text_field :name, class: "form-control", placeholder: "Enter your name" %>
+  </div><!--end form-group name-->
+</div><!--end row-->
+<div class="row">
+  <div class="form-group">
+    <%= form.label :email %>
+    <%= form.text_field :email, class: "form-control", placeholder: "Enter your email" %>
+  </div><!--end form-group email-->
+</div><!-- end row-->
+<div class="row">
+  <div class="form-group">
+    <%= form.label :message %>
+    <%= form.text_area :message, class: "form-control", placeholder: "Enter your message", rows: 5 %>
+  </div><!--end form-group message-->
+</div><!--end row-->
+<%= form.submit "Send", class: "form_label btn btn-light" %>
+<% end %>
