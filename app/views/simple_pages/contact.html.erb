@@ -6,19 +6,19 @@
 <div class="row">
   <div class="form-group">
     <%= form.label :name %>
-    <%= form.text_field :name, class: "form-control", placeholder: "Enter your name" %>
+    <%= form.text_field :name, class: "form-control", placeholder: "Enter your name", :required => true %>
   </div><!--end form-group name-->
 </div><!--end row-->
 <div class="row">
   <div class="form-group">
     <%= form.label :email %>
-    <%= form.text_field :email, class: "form-control", placeholder: "Enter your email" %>
+    <%= form.text_field :email, class: "form-control", placeholder: "Enter your email", :required => true %>
   </div><!--end form-group email-->
 </div><!-- end row-->
 <div class="row">
   <div class="form-group">
     <%= form.label :message %>
-    <%= form.text_area :message, class: "form-control", placeholder: "Enter your message", rows: 5 %>
+    <%= form.text_area :message, class: "form-control", placeholder: "Enter your message", rows: 5, :required => true %>
   </div><!--end form-group message-->
 </div><!--end row-->
 <%= form.submit "Send", class: "form_label btn btn-light" %>
