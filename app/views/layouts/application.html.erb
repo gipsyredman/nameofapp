@@ -26,31 +26,39 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active"><%= link_to "Home", root_path %><span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link"><%= link_to "About", simple_pages_about_path %></a>
-          <a class="nav-item nav-link"><%= link_to "Contact", simple_pages_contact_path %></a>
-          <a class="nav-item nav-link"><%= link_to "Products", products_path %></a>
-          <div class="search-nav">
-            <%= form_with(url: products_path, method: 'get', local: true, class: 'form-inline my-2 my-lg-0') do |form| %>
-            <%= form.text_field :q, id: 'q', value: params[:q], class: "search-field", placeholder: "Search here" %>
-            <%= form.submit 'Search', class: 'search-button' %>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-item nav-link active"><%= link_to "Home", root_path %><span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link"><%= link_to "About", simple_pages_about_path %></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link"><%= link_to "Contact", simple_pages_contact_path %></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link"><%= link_to "Products", products_path %></a>
+          </li>
+        </ul>
+        <div class="search-nav navbar-left">
+          <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
+          <%= form.text_field :q, id: 'q', value: params[:q], class: "search-field", placeholder: "Search here" %>
+          <%= form.submit 'Search', class: 'search-button' %>
+          <% end %>
+        </div><!--end search div-->
+        <div class="login-logout">
+          <ul class="navbar-nav ml-auto navbar-right">
+            <% if user_signed_in? %>
+            <li class="nav-item">
+              <%= link_to('Logout', destroy_user_session_path, method: :delete, class: "nav-link") %>
+            </li>
+            <% else %>
+            <li class="nav-item">
+              <%= link_to('Login', new_user_session_path, class: "nav-link") %>
+            </li>
             <% end %>
-          </div><!--end search div-->
-          <div class="login-logout">
-            <ul class="navbar-nav ml-auto">
-              <% if user_signed_in? %>
-              <li class="nav-item">
-                <%= link_to('Logout', destroy_user_session_path, method: :delete, class: "nav-link") %>
-              </li>
-              <% else %>
-              <li class="nav-item">
-                <%= link_to('Login', new_user_session_path, class: "nav-link") %>
-              </li>
-              <% end %>
-            </ul>
-          </div><!--end login-->
-        </div>
+          </ul>
+        </div><!--end login-->
       </div>
     </nav>
     <%= yield %>
