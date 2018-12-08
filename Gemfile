@@ -28,7 +28,11 @@ gem 'jquery-rails'
 
 gem 'normalize-rails'
 
+<<<<<<< HEAD
 gem 'cancancan', '~> 1.10'
+=======
+gem 'devise'
+>>>>>>> master
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
