@@ -30,6 +30,8 @@ gem 'normalize-rails'
 
 gem 'devise'
 
+gem 'cancancan', '~> 1.10'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
