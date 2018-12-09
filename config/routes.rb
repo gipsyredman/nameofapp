@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users do
-    get 'users/sign_out' => 'devise/sessions#destroy'
-  end
+  devise_for :users
 #  resources :users
   resources :products
   resources :orders, only: [:index, :show, :create, :destroy]
