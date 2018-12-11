@@ -27,7 +27,9 @@
 
 <p>
   <strong>Rating:</strong>
+  <% if @product.highest_rating_comment.nil? %>
   <%= @product.highest_rating_comment %>
+  <% end %>
 </p>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
