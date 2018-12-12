@@ -28,9 +28,12 @@
     </p>
 
     <p>
-      <strong>Rating:</strong>
+      <strong>Ratings:</strong>
       <% if @product.highest_rating_comment.nil? %>
       <%= @product.highest_rating_comment %>
+      <% end %>
+      <% if @product.lowest_rating_comment.nil? %>
+      <%= @product.lowest_rating_comment %>
       <% end %>
     </p>
 
