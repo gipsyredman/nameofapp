@@ -1,3 +1,4 @@
+<%= javascript_include_tag 'jquery.raty.js', "data-turbolinks-track": false %>
 <p id="notice"><%= notice %></p>
 <div class="container-fluid">
   <div class="row">
@@ -40,7 +41,9 @@
     <div class="new-comment">
       <%= render 'new_comment' %>
     </div>
-    <%= render 'comments' %>
+    <div>
+      <%= render 'comments' %>
+    </div>
 
     <%= link_to 'Edit', edit_product_path(@product) %> |
     <%= link_to 'Back', products_path %>
