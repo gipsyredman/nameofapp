@@ -18,6 +18,10 @@
       <%= image_tag(@product.image_url, class: "img-fluid thumbnail") unless @product.image_url.nil? %>
     </p>
 
+    <p>
+      <strong>Colour:</strong>
+      <%= @product.colour %>
+    </p>
 
     <p>
       <strong>Price:</strong>
