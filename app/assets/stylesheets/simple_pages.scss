@@ -7,6 +7,12 @@ body {
   padding: 50px 100px 100px 100px;
 }
 
+.container {
+  display: flex;
+  margin: 0 auto;
+  padding: 15px;
+}
+
 //Typography
 
 h1, h2, h3 {
@@ -24,6 +30,18 @@ a {
   position: fixed;
   clear: both;
   background-color: #f5f5f5;
+}
+
+.comment-pagination {
+  padding: 1em;
+  letter-spacing: 2px;
+
+}
+
+.submit-button {
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #bed4f7;
 }
 
 //navbar
@@ -72,10 +90,6 @@ nav a:hover {
   font-family: Raleway, Verdana, Helvetica, Arial, sans-serif;
 }
 
-.login-logout {
-
-}
-
 
 
 //Carousel
@@ -103,4 +117,40 @@ i {
 
 .product-container {
   max-width: 50%;
+}
+
+.left-column {
+  width: 50%;
+  position: relative;
+}
+
+.left-column img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.right-column {
+  width: 50%;
+  margin-top: 60px;
+  float: right;
+}
+
+.product-description {
+  margin-bottom: 20px;
+}
+
+.product-price {
+
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E1E8EE;
+}
+
+.product-description span {
+  font-size: 20px;
+  color: #358ED7;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
 }

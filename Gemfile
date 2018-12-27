@@ -32,6 +32,10 @@ gem 'devise'
 
 gem 'cancancan', '~> 1.10'
 
+gem 'will_paginate'
+
+gem 'bootstrap-will_paginate'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
