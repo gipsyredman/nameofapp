@@ -44,6 +44,12 @@ a {
   background-color: #bed4f7;
 }
 
+.fa-dumpster-fire {
+  font-size: 15px !important;
+}
+
+
+
 //navbar
 
 .navbar {
@@ -116,11 +122,11 @@ i {
 //Products
 
 .product-container {
-  max-width: 50%;
+  max-width: 75%;
 }
 
 .left-column {
-  width: 50%;
+  width: 60%;
   position: relative;
 }
 
@@ -132,7 +138,7 @@ i {
 }
 
 .right-column {
-  width: 50%;
+  width: 40%;
   margin-top: 60px;
   float: right;
 }
