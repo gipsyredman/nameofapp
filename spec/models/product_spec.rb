@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe Product do
   let(:product) { Product.create!(name: "sunglasses") }
-  let(:user) {User.create!(email: "mail@email.com", password: "password")}
+  let(:user) {@user = FactoryBot.create(:user)}
 
   before do
     product.comments.create!(rating: 1, user: user, body: "Awful sunglasses")
