@@ -18,7 +18,11 @@
         </div><!--/product desc-->
         <div class="product-price">
           <span>$<%= @product.price %></span>
+
       </div><!--/right column-->
+      <div><%= form_with(url: '/payments/create') do |form| %>
+        <%= render partial: "shared/stripe_checkout_button" %>
+      <% end %></div>
       <div>
         <strong>Ratings:</strong>
           <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div></p>
