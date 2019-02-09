@@ -6,7 +6,9 @@ class ProductsController < ApplicationController
   def index
     if params[:q]
       search_term = params[:q]
+      byebug
       @products = Product.search(search_term)
+      logger.debug "#{@products.count} products in the system"
     else
       @products = Product.all
     end
