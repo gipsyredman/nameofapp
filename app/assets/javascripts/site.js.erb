@@ -1,4 +1,5 @@
-$(document).on('turbolinks:load', function(){
+
+var refreshRating = function() {
   var j = jQuery.noConflict();
   $('.rating').raty({
     starHalf: '<%= asset_path 'star-half.png' %>',
@@ -6,8 +7,7 @@ $(document).on('turbolinks:load', function(){
     starOn: '<%= asset_path 'star-on.png' %>',
     scoreName: 'comment[rating]'
   });
-
-  $('.rated').raty({
+    $('.rated').raty({
     starHalf: '<%= asset_path 'star-half.png' %>',
     starOff: '<%= asset_path 'star-off.png' %>',
     starOn: '<%= asset_path 'star-on.png' %>',
@@ -16,5 +16,10 @@ $(document).on('turbolinks:load', function(){
       return $(this).attr('data-score');
     }
   });
-  $('.img-zoom').elevateZoom();
+};
+
+$(document).on('turbolinks:load', function() {
+    refreshRating();
+
+    $('.img-zoom').elevateZoom();
 });
