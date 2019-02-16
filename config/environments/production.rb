@@ -5,9 +5,9 @@ Rails.application.configure do
   config.cache_classes = true
 
   config.cache_store = :mem_cache_store,
-                    (ENV["MEMCACHIER_SERVERS"] || "").split(","),
-                    {:username => ENV["MEMCACHIER_USERNAME"],
-                     :password => ENV["MEMCACHIER_PASSWORD"],
+                    (ENV["mc2.dev.ec2.memcachier.com:11211"] || "").split(","),
+                    {:username => ENV["95D488"],
+                     :password => ENV["695D622B20EA5D2B21E4ADD2B9F14C33"],
                      :failover => true,
                      :socket_timeout => 1.5,
                      :socket_failure_delay => 0.2,
