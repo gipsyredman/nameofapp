@@ -38,6 +38,10 @@ gem 'bootstrap-will_paginate'
 
 gem 'stripe'
 
+gem 'dalli'
+
+gem 'memcachier'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
