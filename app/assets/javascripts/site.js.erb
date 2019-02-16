@@ -1,4 +1,5 @@
 $(document).on('turbolinks:load', function(){
+  var j = jQuery.noConflict();
   $('.rating').raty({
     starHalf: '<%= asset_path 'star-half.png' %>',
     starOff: '<%= asset_path 'star-off.png' %>',
