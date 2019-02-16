@@ -42,6 +42,10 @@ gem 'dalli'
 
 gem 'memcachier'
 
+gem 'redis'
+
+gem 'redis-rails'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
