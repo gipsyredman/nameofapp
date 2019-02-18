@@ -5,7 +5,7 @@
 
 <div class="container-fluid product-container">
   <div class="row">
-    <% cache @products do %>
+    <% cache(cache_key_for_products) do %>
       <%= render @products %>
     <% end %>
   </div>
