@@ -1,7 +1,7 @@
 <%= javascript_include_tag 'jquery.raty.js', "data-turbolinks-track": false %>
 <p id="notice"><%= notice %></p>
 <div class="container-fluid">
-  <div class="row">
+  <div class="row" data-product-id="<%= @product.id %>">
     <div class="col-sm-6 col-md-3">
       <div class="left-column">
         <%= image_tag(@product.image_url, class: "img-zoom img-fluid", data_zoom_image:@product.image_url) unless @product.image_url.nil? %>
