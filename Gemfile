@@ -26,6 +26,8 @@ gem 'jbuilder', '~> 2.5'
 # Use jQuery as the JavaScript library
 gem 'jquery-rails'
 
+gem 'jquery-turbolinks'
+
 gem 'normalize-rails'
 
 gem 'devise'
